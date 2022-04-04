@@ -1,0 +1,26 @@
+# note: YAML definitions for multiple components/resources can be bundled together into one YAML file
+# '---' is used to separate the definitions of the components/resources
+
+# define the `Deployment` for the mongodb server
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: mongo-deployment
+  labels:
+    app: mongodb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mongodb
+  template:
+    metadata:
+      labels:
+         app: mongodb
+    spec:
+      contai:ners:
+      - name
+# define the `Deployment` for mongo-express
+---
+# define the `Deployment` for flask-app
+# set ImagePullPolicy to 'Never' to allow the use of the locally built image
