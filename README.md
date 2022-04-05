@@ -18,6 +18,25 @@ The flask-app-image.dockerfile specifies the insructions to assemble the docker 
 
 The .yaml files in the root directory specify the kubernetes manifests that will bring up your microservices deployment of the problem statement.
 
+# Execution Commands
+
+docker build . -f flask-app-image.dockerfile -t blogapp:1.0
+
+kubectl apply -f secret.yaml
+
+kubectl apply -f configmap.yaml
+
+kubectl apply -f services.yaml
+
+kubectl apply -f deployments.yaml
+
+kubectl get pod
+
+
+localhost:5001
+
+localhost:8081
+
 # Acknowledgements
 
 I'd like to thank Prof. Saritha and the TAs - Sathvik Saya and Aniket - for their guidance throughout the project. I'd also like to thank my teammates - Tankala Sunaina, U Suchithra and Vivek Dharamdas for their contribution in the project.
