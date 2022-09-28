@@ -39,4 +39,4 @@ localhost:8081
 
 # Acknowledgements
 
-I'd like to thank Prof. Saritha and the TAs - Sathvik Saya and Aniket - for their guidance throughout the project. I'd also like to thank my teammates - Tankala Sunaina, U Suchithra and Vivek Dharamdas for their contribution in the project.
+I'd like to thank Prof. Saritha and the TAs - Sathvik Saya and Aniket - for their guidance throughout the project. I'd also like to thank my teammates - Tankala Sunaina, U Suchithra and Vivek S D for their contribution in the project.
